@@ -1,0 +1,13 @@
+---
+description: Figma import discipline — ambiguity first, atomic mapping
+globs: components/screens/**,components/branding/**,docs/figma/**
+alwaysApply: false
+---
+
+# Figma import rules
+
+1. Before large codegen from Figma, output **@AMBIGUITY_PASS** then **@DESIGN_READBACK** (see `docs/figma/PROMPT_TEMPLATE.md`).
+2. Map UI to **atomic layers**: `components/branding/{atoms,molecules,organisms,templates,tokens}`; screens compose in `components/screens/`.
+3. Assets go to `public/assets/images` or `public/assets/icons` (not unreferenced roots).
+4. Portfolio routes belong under `app/(portfolio)/` unless explicitly expanding scope.
+5. For Figma MCP **writes**, follow the **figma-use** skill before `use_figma`.

@@ -5,6 +5,8 @@ A curated collection of tools, frameworks, fonts, and inspiration for modern fro
 
 🌐 **Live Site:** [uiarchives.com](https://uiarchives.com)
 
+> **Portfolio workspace:** This clone adds `/portfolio`, `components/screens`, `components/branding`, Cursor agents/skills, and `docs/` playbooks. Git remote `upstream` → [Malay146/UIArchives](https://github.com/Malay146/UIArchives). Add your repo as `origin` — see [docs/GIT_SETUP.md](docs/GIT_SETUP.md). Deploy notes: [docs/deployment/vercel.md](docs/deployment/vercel.md).
+
 <img width="1841" height="1025" alt="image" src="https://github.com/user-attachments/assets/22cd69da-667c-4fd7-957a-d5ee616b5e4f" />
 
 

@@ -1,0 +1,15 @@
+---
+description: Use ACE for multi-step planning and context discipline
+globs: "**/*"
+alwaysApply: false
+---
+
+# Advanced context engineering
+
+For tasks that span multiple files, refactors, or ambiguous requirements:
+
+1. Read `docs/context-engineering/advanced-context-engineering/ace-fca.md` before locking in a large plan.
+2. Prefer explicit phases: inventory → plan → implement → verify.
+3. Keep “why” and constraints in `docs/figma/imports/*/CONTEXT.md` when work is Figma-driven.
+
+Do not paste the entire ACE doc into chat; reference paths only.
