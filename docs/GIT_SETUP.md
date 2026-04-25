@@ -1,16 +1,16 @@
 # Git remotes
 
-After bootstrap, `origin` was renamed to **`upstream`** (Malay146/UIArchives).
+Configured remotes:
 
-Add your GitHub repository:
+- **`upstream`** — [Malay146/UIArchives](https://github.com/Malay146/UIArchives) (pull fixes here).
+- **`origin`** — [spatel54/portfolio-implementation](https://github.com/spatel54/portfolio-implementation) (your pushes).
 
-```bash
-git remote add origin https://github.com/<you>/<your-repo>.git
-git push -u origin main
-```
-
-Replace URL and branch as needed. Pull upstream updates with:
+Pull upstream updates:
 
 ```bash
 git fetch upstream
+# merge or rebase as you prefer, e.g.:
+# git merge upstream/main
 ```
+
+History was **unshallowed** once so `git push` to GitHub succeeds (shallow-only clones can fail on push).

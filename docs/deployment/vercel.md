@@ -2,9 +2,10 @@
 
 ## Project
 
-- **Framework:** Next.js (auto-detected from `package.json`).
-- **Git:** Link this repo’s **`origin`** remote in the Vercel dashboard for Preview + Production builds.
-- **Upstream:** `upstream` points at [Malay146/UIArchives](https://github.com/Malay146/UIArchives) for pulling fixes; Vercel should use **your** fork / repo as `origin`.
+- **Vercel project:** `portfolio-implementation` under team **sjp10-9620s-projects**.
+- **Git:** Connected to **`origin`** → [github.com/spatel54/portfolio-implementation](https://github.com/spatel54/portfolio-implementation) (via `vercel git connect`).
+- **Dashboard:** [Vercel project](https://vercel.com/sjp10-9620s-projects/portfolio-implementation).
+- **Upstream:** `upstream` → [Malay146/UIArchives](https://github.com/Malay146/UIArchives) (local only; not used by Vercel).
 
 ## First-time setup
 
@@ -25,6 +26,11 @@ Document each key here when you add it to Vercel (never commit secret values).
 ## Submodules
 
 If you add git submodules later, enable **Include submodules** in the Vercel Git integration if builds need them. This bootstrap vendors ACE as a **normal cloned folder** under `docs/context-engineering/advanced-context-engineering/` to avoid submodule friction.
+
+## URLs (after first successful deploy)
+
+- **Production alias:** [https://portfolio-implementation.vercel.app](https://portfolio-implementation.vercel.app)
+- **Dashboard:** [portfolio-implementation on Vercel](https://vercel.com/sjp10-9620s-projects/portfolio-implementation)
 
 ## Smoke checks after deploy
 
