@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dai+Banna+SIL:ital,wght@0,300;0,400;1,300;1,400&family=DotGothic16&family=Figtree:wght@300;400;700&family=Doto:wght@400;700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -214,4 +214,90 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   SUNSET DESIGN SYSTEM — v1.0
+   Theme: warm dark, parchment tones, frosted glass surfaces
+   Named --sp-* to isolate from shadcn --color-* tokens.
+   Source of truth: components/branding/tokens/index.ts
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+:root {
+  /* ── Backgrounds ──────────────────────────────────────── */
+  --sp-bg-page:     #181716;   /* page canvas, mobile bg     */
+  --sp-bg-surface:  #272625;   /* card body, inner panels    */
+  --sp-bg-elevated: #302f2e;   /* title bars, canvas chrome  */
+  --sp-bg-overlay:  #312f2b;   /* luminosity frosted glass   */
+  --sp-bg-btn-sec:  #302e2a;   /* secondary / "Say Hi" btn   */
+
+  /* ── Glass / transparency ─────────────────────────────── */
+  --sp-glass-toolbar: rgba(128, 128, 128, 0.15); /* toolbar pill  */
+  --sp-glass-nav:     rgba(255, 255, 255, 0.10); /* nav dock      */
+  --sp-glass-chip:    rgba(255, 255, 255, 0.04); /* file label    */
+  --sp-glass-tag:     rgba(23, 23, 23, 0.20);    /* work tags     */
+  --sp-glass-btn-sec: rgba(60, 60, 60, 0.30);    /* theme pill    */
+
+  /* ── Text ─────────────────────────────────────────────── */
+  --sp-text-primary:   #dac5a7;              /* warm sand         */
+  --sp-text-secondary: #928573;              /* dimmer sand       */
+  --sp-text-muted:     #827a72;              /* labels, icons     */
+  --sp-text-dim:       rgba(218, 197, 167, 0.55); /* descriptions */
+  --sp-text-sep:       rgba(218, 197, 167, 0.30); /* nav dividers  */
+  --sp-text-white:     #ffffff;
+  --sp-icon-inactive:  #545454;             /* inactive tool icon */
+
+  /* ── Accents ──────────────────────────────────────────── */
+  --sp-accent-orange: #df7246;  /* primary CTA, clock second  */
+  --sp-accent-gold:   #c7bd00;  /* date, location, day label  */
+  --sp-accent-green:  #e0ffd3;  /* battery positive indicator */
+
+  /* ── Borders ──────────────────────────────────────────── */
+  --sp-border-warm:   rgba(218, 197, 167, 0.15); /* card borders    */
+  --sp-border-bright: rgba(255, 255, 255, 0.40); /* toolbar/btn     */
+  --sp-border-dim:    rgba(255, 255, 255, 0.06); /* section dividers */
+  --sp-border-chip:   rgba(218, 197, 167, 0.18); /* file chips      */
+  --sp-border-mobile: rgba(255, 255, 255, 0.08); /* mobile header   */
+  --sp-border-tag:    #282828;                   /* work card tags  */
+
+  /* ── Backdrop blur ────────────────────────────────────── */
+  --sp-blur-sm: 15px;  /* inner panel   */
+  --sp-blur-md: 25px;  /* buttons/chips */
+  --sp-blur-lg: 50px;  /* major glass   */
+  --sp-blur-xl: 52px;  /* nav dock      */
+
+  /* ── Border radius ────────────────────────────────────── */
+  --sp-r-tag:     4px;   /* work tag pills    */
+  --sp-r-sm:      12px;  /* small chips       */
+  --sp-r-chip:    14px;  /* canvas chrome     */
+  --sp-r-md:      18px;  /* buttons, badge    */
+  --sp-r-card:    24px;  /* stacked cards     */
+  --sp-r-nav:     28px;  /* nav dock          */
+  --sp-r-window:  32px;  /* bento windows     */
+  --sp-r-toolbar: 34px;  /* toolbar pill      */
+  --sp-r-hero:    40px;  /* hero container    */
+
+  /* ── Typography ───────────────────────────────────────── */
+  --sp-font-ui:      'Figtree', sans-serif;
+  --sp-font-pixel:   'DotGothic16', monospace;
+  --sp-font-digital: 'Doto', monospace;
+  --sp-font-mono:    'DM Mono', monospace;
+  --sp-font-serif:   'Dai Banna SIL', serif;
+  --sp-font-utility: 'Inter', sans-serif;
+
+  /* ── Motion ───────────────────────────────────────────── */
+  --sp-duration-fast:   150ms;
+  --sp-duration-base:   200ms;
+  --sp-duration-medium: 300ms;
+  --sp-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --sp-easing-out:      cubic-bezier(0, 0, 0.2, 1);
+  --sp-easing-in:       cubic-bezier(0.4, 0, 1, 1);
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --sp-shadow-nav:  inset 0 -1px 1px rgba(255,255,255,0.10),
+                    inset 0  1px 1px rgba(255,255,255,0.25);
+  --sp-shadow-glow-orange: 0 0 24px 4px rgba(223, 114, 70, 0.45);
+
+  /* ── Background pattern ───────────────────────────────── */
+  --sp-dot-color:  rgba(218, 197, 167, 0.07);
+  --sp-dot-size:   36px;
 }
